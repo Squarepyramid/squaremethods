@@ -12,7 +12,6 @@
             <div class="col-md-8">
                 <div class="card" >
                     <div class="card-header">{{ __('Register') }}</div>
-
                     <div class="card-body dx-signin" style="text-align: center; margin: auto;" >
                         <form method="POST" action="{{ route('register') }}" class="dx-form" style="">
                             @csrf
@@ -61,8 +60,6 @@
                                 </div>
                             </div>--}}
 
-
-
                             <div class="dx-form-group-md">
                                 <a href="account.html" class="dx-btn dx-btn-block dx-btn-popup dx-btn-envato d-flex align-items-center justify-content-center">
                                     <span class="fas fa-leaf mr-20"></span><span>Sign Up with Google</span>
@@ -108,13 +105,12 @@
                             <div class="dx-form-group-md">
 <!--                                <input type="password" class="form-control form-control-style-4" placeholder="Confirm password">-->
                                 <input id="password-confirm" placeholder="Confirm password" type="password" class="form-control form-control-style-4" name="password_confirmation" required autocomplete="new-password">
-
                             </div>
 <!--                            <div class="dx-form-group-md">
                                 <input type="text" name="team_name" class="form-control" required placeholder="Company Name">
                             </div>-->
                             <div class="dx-form-group-md">
-                                <a href="account.html" class="dx-btn dx-btn-block dx-btn-popup">Sign Up</a>
+                                <button type="submit" class="dx-btn dx-btn-block dx-btn-popup">Sign Up</button>
                             </div>
                         </form>
                     </div>
@@ -122,7 +118,7 @@
             </div>
         </div>
     </div>
-<!--    <div class="dx-signin text-center">
+<!--<div class="dx-signin text-center">
         <h1 class="h3 text-white mb-30">Sign Up</h1>
         <form action="#" class="dx-form">
             <div class="dx-form-group-md">

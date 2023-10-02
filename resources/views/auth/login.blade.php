@@ -6,13 +6,9 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
-
                 <div class="card-body dx-signin-content dx-signin text-center" style="margin: auto;">
                     <form method="POST" action="{{ route('login') }}" class="dx-form">
                         @csrf
-
-
-
                         <div class="dx-form-group-md">
                             <a href="account.html" class="dx-btn dx-btn-block dx-btn-popup dx-btn-envato d-flex align-items-center justify-content-center">
                                 <span class="fas fa-leaf mr-20"></span><span>Log in with Google</span>
@@ -34,7 +30,6 @@
                         <div class="dx-form-group-md">
 <!--                            <input type="password" class="form-control form-control-style-4" placeholder="Password">-->
                             <input placeholder="Password" id="password" type="password" class="form-control @error('password') is-invalid @enderror form-control-style-4" name="password" required autocomplete="current-password">
-
                             @error('password')
                             <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -46,7 +41,6 @@
                             <div class="row">
                                 <div class="col-3">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
                                 </div>
                                 <div class="col-9" style="text-align: left">
                                     <label class="form-check-label" for="remember">
@@ -54,8 +48,6 @@
                                     </label>
                                 </div>
                             </div>
-
-
                         </div>
                         <div class="dx-form-group-md">
                             <button type="submit"  class="dx-btn dx-btn-block dx-btn-popup">Log In</button>
@@ -72,6 +64,4 @@
         </div>
     </div>
 </div>
-
-
 @endsection
